@@ -51,8 +51,10 @@ Total spend ≈ **$470**. **Zero tracked bookings/purchases.** The pixel only se
 | Campaign | MM \| Christmas 2026 \| Traffic | `120250389984190719` |
 | Ad set | MM \| Sydney 40km \| 30-65 (40 km around Alexandria, age 25+ hard, 30–65 suggested, Advantage+ audience and placements, 21 Nov–22 Dec) | `120250389984670719` |
 | Ad 1 | MM \| Video \| Dad, how did you and Mum meet? (30 s video: 1148484374122902 feed, 1509083257034104 Stories/Reels) | ad `120250389986900719`, creative `1699063801778821` |
-| Ad 2 | "Their stories. Yours to keep." (new 2026 design). Cooper OK'd its "customer review" quote for now. **Confirm it's a real quote before any rerun.** | to build |
-| Ad 3 | Gift voucher still | to build |
+| Ad 2 | MM \| Image \| Their stories. Yours to keep. (NEW ADS "ChatGPT Image Nov 10, 2026, 03_10_24 PM.png", hook "Nan, what was Christmas like when you were little?", Book Now). Cooper OK'd its "customer review" quote for now. **Confirm it's a real quote before any rerun.** | ad `120250390072320719`, creative `1428472599268224`, image hash `8f3b24619a5f1b43da254676cff08763` |
+| Ad 3 | MM \| Image \| Gift: Every family has a story (NEW ADS "…03_10_10 PM.png", hook "Stuck on what to give Dad this Christmas?", Learn More) | ad `120250390072730719`, creative `1000553515859121`, image hash `b84f2ccfb4864d212962d88a63296028` |
+
+Not used: NEW ADS `5.webp` ("One hour. A lifetime of stories.") and `6.webp` ("1 HOUR of family stories"). Both show AI-looking hands, and 6 repeats the unverified quote. Keep them as backups if a fresh creative is needed mid-campaign.
 
 Build notes:
 - With Traffic plus different videos per placement, Meta rejects `BOOK_NOW`. Use `LEARN_MORE`.

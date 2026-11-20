@@ -84,7 +84,7 @@ CTA: Learn More
 ## Build workflow (Meta Ads connector)
 
 1. `ads_get_ad_entities` on `2028389834366573`: check nothing Making Memories is live or overlapping.
-2. Upload images/videos (`ads_create_upload_url` / `ads_creative_upload_media`) from Drive downloads.
+2. Upload images/videos. The Drive connector can't pass large images through, so download them from Drive in Chrome (`https://drive.google.com/uc?export=download&id=<fileId>`, with the user's OK) into `~/Downloads`. Convert `.webp` to PNG with `sips -s format png in.webp --out out.png`, then `ads_create_upload_url` → `curl --data-binary` → `ads_finalize_upload` to get the image hash.
 3. `ads_create_campaign`: status **PAUSED**, objective as above, no campaign budget (use ad set budget) unless asked.
 4. `ads_create_ad_set`: **PAUSED**, daily budget, start/end dates, Sydney radius, age, optimisation goal.
 5. `ads_create_creative` per ad: page `725777784208212`, link with UTMs `?utm_source=meta&utm_medium=paid&utm_campaign=mm_<season>_<year>&utm_content=<ad-name>`.
