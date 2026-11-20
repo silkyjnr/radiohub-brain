@@ -42,6 +42,18 @@ Total spend ≈ **$470**. **Zero tracked bookings/purchases.** The pixel only se
 
 ## 2026: Christmas (planned)
 
-- Budget: $25/day to 22 Dec 2026 (~$800). Offer: session before Christmas **or** gift voucher.
+- Budget: $25/day to 22 Dec 2026 (~$800), set at campaign level. Offer: session before Christmas **or** gift voucher. All ads link to the Making Memories page (no separate voucher page).
 - Objective: Traffic → landing page views (until booking tracking exists).
-- Built PAUSED for Cooper to review. IDs and results to be added here.
+- Built 20 Nov 2026 as an **Ads Manager draft** (unpublished, so nothing spends until Cooper publishes it).
+
+| Level | Name | ID |
+|---|---|---|
+| Campaign | MM \| Christmas 2026 \| Traffic | `120250389984190719` |
+| Ad set | MM \| Sydney 40km \| 30-65 (40 km around Alexandria, age 25+ hard, 30–65 suggested, Advantage+ audience and placements, 21 Nov–22 Dec) | `120250389984670719` |
+| Ad 1 | MM \| Video \| Dad, how did you and Mum meet? (30 s video: 1148484374122902 feed, 1509083257034104 Stories/Reels) | ad `120250389986900719`, creative `1699063801778821` |
+| Ad 2 | "Their stories. Yours to keep." (new 2026 design). Cooper OK'd its "customer review" quote for now. **Confirm it's a real quote before any rerun.** | to build |
+| Ad 3 | Gift voucher still | to build |
+
+Build notes:
+- With Traffic plus different videos per placement, Meta rejects `BOOK_NOW`. Use `LEARN_MORE`.
+- Results: add here when the campaign ends.

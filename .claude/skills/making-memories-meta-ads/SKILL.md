@@ -21,7 +21,8 @@ Load `making-memories-brand` first for colours, fonts, logo and voice. Past resu
 |---|---|
 | Ad account | RadioHub Media, `2028389834366573` (AUD, min daily budget $1.49) |
 | Page | RadioHub Media, `725777784208212` |
-| Instagram | look up with `ads_get_ig_accounts` before building, then record the ID here |
+| Instagram | @radiohubmedia, `17841400261776523` (linked to the Page above) |
+| Best video assets | `1148484374122902` "Making Memories - Meta ADS.mp4" (30 s, feed), `1509083257034104` (9:16 story version), `864631699576080` Christmas AD Square (116 s, too long for cold ads) |
 | Pixel/dataset | "Making Memories", `834947215699382` |
 | Landing page | https://www.radiohub.com.au/makingmemoriesservices |
 
@@ -59,7 +60,8 @@ Formats: 1:1 or 4:5 for feed, 9:16 for Stories/Reels. Keep text off faces.
 - Say what they get, concretely: **1-hour guided session · our Alexandria studio · we bring the questions · edited highlight video · private link · $799.**
 - Gift angle for Christmas: "The gift they'll never forget getting", "Book before Christmas, or give a gift voucher."
 - Reassure: "No experience needed. We guide the whole conversation."
-- One CTA. Use **Book Now** for sessions and **Learn More** / **Shop Now** for voucher pages. Never `BOOK_TRAVEL` (2025 mistake).
+- One CTA. Use **Book Now** for sessions and **Learn More** / **Shop Now** for voucher pages. Never `BOOK_TRAVEL` (2025 mistake). Exception: a Traffic ad with different media per placement can't use Book Now, so use Learn More.
+- There's no separate voucher page. Every ad links to the Making Memories page.
 - Avoid guilt or mortality framing, clichés, all caps.
 - Headline under ~40 characters. Primary text: the first 125 characters carry the message.
 
