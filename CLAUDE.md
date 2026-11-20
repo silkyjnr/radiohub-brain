@@ -56,7 +56,9 @@ File-level IDs are in each brand skill.
 - Ad account: **RadioHub Media**, `2028389834366573` (AUD). Use this one for Making Memories.
   - Other accounts the login can see: `365675180562482` "RadioHub" (USD, old), `10151223254711019` (personal, empty), `2378335789336576` Fit Business Services (**not ours to touch** for Radio Hub work).
 - Facebook Page: **RadioHub Media**, `725777784208212` (lead-ads terms accepted).
-- Pixel/dataset: **"Making Memories"**, `834947215699382`. As of 20 Nov 2026 it only sends **PageView**. No Lead or Purchase events, so Meta can't see bookings yet.
+- Pixel/dataset: **"Making Memories"**, `834947215699382`, browser pixel plus Conversions API (server events deduped, match quality 6.1/10). Up to 20 Nov 2026 it had only recorded **PageView**: no Lead or Purchase events, so Meta couldn't see bookings. Cooper submitted a test form at ~3:55 pm 20 Nov and the pixel fired then; confirm in Events Manager whether a Lead event came through.
+  - Two other pixels in the business ("RadioHub Pixel" `1010379871254663`, "RadioHub Media Pixel" `802214036057708`) have **never fired**. Ignore them or delete them.
+- **Website:** radiohub.com.au runs on **Squarespace**, with two Google Tag Manager containers (`GTM-WN9BDT`, `GTM-TD2PRVPG`). The Making Memories page code only contains `fbq('init')` and `fbq('track','PageView')`. Its form shows an inline "Thank you!" with no separate thank-you page, so a Lead event has to come from a GTM tag on form submit (or Squarespace's Meta integration).
 
 **Higgsfield** (if connected): makes image/video variations from our **real** studio photos. Never pass off AI-generated people as real clients.
 
