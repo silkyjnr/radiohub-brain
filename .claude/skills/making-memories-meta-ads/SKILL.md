@@ -89,7 +89,8 @@ CTA: Learn More
 3. `ads_create_campaign`: status **PAUSED**, objective as above, no campaign budget (use ad set budget) unless asked.
 4. `ads_create_ad_set`: **PAUSED**, daily budget, start/end dates, Sydney radius, age, optimisation goal.
 5. `ads_create_creative` per ad: page `725777784208212`, link with UTMs `?utm_source=meta&utm_medium=paid&utm_campaign=mm_<season>_<year>&utm_content=<ad-name>`.
-6. `ads_create_ad`: **PAUSED**.
+   - **Image ads: don't use `ads_create_creative`'s `headline`/`description` shortcut.** It also writes `link_title`/`link_description` into the call-to-action, which Meta has deprecated, and the ad fails validation. Instead pass an inline creative to `ads_create_ad`: `object_story_spec.link_data` with `link`, `message`, `name` (headline), `description`, `image_hash`, and `call_to_action: {type, value: {link}}` only. Put `url_tags` at creative level.
+6. `ads_create_ad`: **PAUSED**. Then read the draft back (`ads_get_ad_entities` with `object_state=draft`) and check every ad shows `VALIDATED` with no `active_errors`.
 7. `ads_get_ad_preview` for each ad. Show Cooper the previews plus a summary table.
 8. Only on Cooper's yes: `ads_activate_entity`.
 9. Record what was built (IDs, budget, dates, creative) in `references/past-performance.md` and commit.

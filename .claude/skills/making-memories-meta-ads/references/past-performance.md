@@ -58,4 +58,5 @@ Not used: NEW ADS `5.webp` ("One hour. A lifetime of stories.") and `6.webp` ("1
 
 Build notes:
 - With Traffic plus different videos per placement, Meta rejects `BOOK_NOW`. Use `LEARN_MORE`.
+- 22 Nov: Ads Manager flagged ads 2 and 3 with "Creative Call To Action's Link Title and Link Description Are Deprecated". `ads_create_creative` had copied the headline and description into `call_to_action.value.link_title` / `link_description`. Fixed by replacing each ad's draft creative inline (`ads_update_entity` → `creative.object_story_spec.link_data`) with `name` + `description` in `link_data` and `call_to_action.value` holding only `link`. Both now validate. The video ad (placement-customised asset feed) was not affected.
 - Results: add here when the campaign ends.
