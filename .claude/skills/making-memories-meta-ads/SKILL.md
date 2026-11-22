@@ -56,6 +56,7 @@ Formats: 1:1 or 4:5 for feed, 9:16 for Stories/Reels. Keep text off faces.
 
 ## Copy rules
 
+- **Match the hook to who's on screen.** If the footage shows a grandmother being interviewed, ask Nan, not Dad. Cooper caught this on the Christmas 2026 video.
 - **Hook = a question a family member would ask:** "Dad, how did you and Mum meet?" / "Nan, what was Christmas like when you were little?"
 - Say what they get, concretely: **1-hour guided session · our Alexandria studio · we bring the questions · edited highlight video · private link · $799.**
 - Gift angle for Christmas: "The gift they'll never forget getting", "Book before Christmas, or give a gift voucher."
