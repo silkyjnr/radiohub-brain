@@ -28,7 +28,7 @@ This repo is the shared brain for RadioHub Media. Everyone (Sydney and the Phili
 
 ### Making Memories in one paragraph
 
-A family books a **one-hour guided session** in our studio. One family member interviews a loved one (usually a parent or grandparent) from a **tailored question set**, and we edit it into a **highlight video** they keep, delivered on a **private link**. **$799.** Most buyers are **adult children and grandchildren giving it as a gift**, so **Christmas is our big moment** (Mother's Day and Father's Day are the next ones).
+A family books a **one-hour guided session** in our studio, **or we record it in their home**. One family member interviews a loved one (usually a parent or grandparent) from a **tailored question set**, and we edit it into a **highlight video** they keep, delivered on a **private link**. **$799.** Most buyers are **adult children and grandchildren giving it as a gift**, so **Christmas is our big moment** (Mother's Day and Father's Day are the next ones).
 Page: https://www.radiohub.com.au/makingmemoriesservices
 
 ## Skills (how we do repeat jobs)

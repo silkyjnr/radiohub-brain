@@ -9,7 +9,7 @@ Source: *Making Memories - Brand Guidelines.pdf* (Drive file `16EVfUbJOtlUTqK8Od
 
 ## The product (say it right)
 
-- **What:** a one-hour **guided** conversation in our Alexandria studio. A family member interviews a loved one (usually a parent or grandparent) from a **tailored question set**. We edit it into a **highlight video** delivered on a **private link**.
+- **What:** a one-hour **guided** conversation, recorded in our Alexandria studio **or in the family's own home** (confirmed by Cooper, 25 Nov 2026; check pricing for home recordings before quoting it). A family member interviews a loved one (usually a parent or grandparent) from a **tailored question set**. We edit it into a **highlight video** delivered on a **private link**.
 - **Price:** **$799**.
 - **Tagline:** **"A guided conversation. A family story to keep."**
 - **Buyer:** adult children and grandchildren, usually **as a gift**. Christmas, Mother's Day and Father's Day are peak times.
