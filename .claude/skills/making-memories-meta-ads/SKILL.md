@@ -92,7 +92,8 @@ CTA: Learn More
    - **Image ads: don't use `ads_create_creative`'s `headline`/`description` shortcut.** It also writes `link_title`/`link_description` into the call-to-action, which Meta has deprecated, and the ad fails validation. Instead pass an inline creative to `ads_create_ad`: `object_story_spec.link_data` with `link`, `message`, `name` (headline), `description`, `image_hash`, and `call_to_action: {type, value: {link}}` only. Put `url_tags` at creative level.
 6. `ads_create_ad`: **PAUSED**. Then read the draft back (`ads_get_ad_entities` with `object_state=draft`) and check every ad shows `VALIDATED` with no `active_errors`.
 7. `ads_get_ad_preview` for each ad. Show Cooper the previews plus a summary table.
-8. Only on Cooper's yes: `ads_activate_entity`.
+8. Only on Cooper's yes: `ads_activate_entity`. Then **read the live campaign back** (`ads_get_ad_entities`, level=ad, filter `campaign.id`) and confirm every ad is there. A draft can show VALIDATED and still fail on publish. Christmas 2026's video ad silently stayed behind as a draft for a day.
+   - If one ad is left behind: build a fresh creative, attach it to the draft ad with `ads_update_entity` (`creative: {creative_id}`), and publish only that ad (`object_ids: [ad]`, `publish_as_active: true`). Adding an ad to a live campaign still needs Cooper's yes.
 9. Record what was built (IDs, budget, dates, creative) in `references/past-performance.md` and commit.
 
 Naming: `MM | <Season Year> | <Objective>` (campaign), `MM | Sydney 40km | 30-65` (ad set), `MM | <format> | <hook>` (ad).
