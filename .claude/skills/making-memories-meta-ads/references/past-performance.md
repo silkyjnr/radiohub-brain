@@ -59,4 +59,15 @@ Not used: NEW ADS `5.webp` ("One hour. A lifetime of stories.") and `6.webp` ("1
 Build notes:
 - With Traffic plus different videos per placement, Meta rejects `BOOK_NOW`. Use `LEARN_MORE`.
 - 22 Nov: Ads Manager flagged ads 2 and 3 with "Creative Call To Action's Link Title and Link Description Are Deprecated". `ads_create_creative` had copied the headline and description into `call_to_action.value.link_title` / `link_description`. Fixed by replacing each ad's draft creative inline (`ads_update_entity` → `creative.object_story_spec.link_data`) with `name` + `description` in `link_data` and `call_to_action.value` holding only `link`. Both now validate. The video ad (placement-customised asset feed) was not affected.
+- **25 Nov, ~5:37 pm: Cooper published the campaign.** Only ads 2 and 3 went live. **Ad 1 (video) never published.** Its draft still shows `HAS_ERRORS` ("Creative Call To Action's Link Title and Link Description Are Deprecated"), so the placement-customised video creative hit the same CTA error after all. Fix: rebuild it without `link_title`/`link_description` in the CTA (title/description go in `video_data` or the asset feed's `titles`/`descriptions`). Lesson: after publishing, check that every ad shows up live, not only that the draft validated.
 - Results: add here when the campaign ends.
+
+### Progress log
+
+| Period | Spend | Impr. | Reach | Link clicks | $/click | Landing page views | $/LPV | Notes |
+|---|---|---|---|---|---|---|---|---|
+| 25 Nov (from 5:37 pm) | $11.02 | 863 | | 29 | $0.38 | 19 | $0.58 | Ads 2 and 3 only |
+| 26 Nov (Thu, full day) | $24.11 | 2,104 | | 59 | $0.41 | 39 | $0.62 | Ad 2: $20.13, 48 clicks, 30 LPV. Ad 3: $3.98, 11 clicks, 9 LPV |
+| Launch to 27 Nov 00:30 | $35.20 | 2,976 | 2,610 | 88 | $0.40 | 58 | $0.61 | Frequency 1.14. Pixel: PageView only, no Lead |
+
+For comparison, 2025's best ad (the video) cost $0.96 per landing page view and the stills cost $2.64–$4.12.
